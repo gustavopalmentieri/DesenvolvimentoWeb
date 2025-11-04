@@ -1,0 +1,53 @@
+.container{
+
+    /*Uma grade do site*/
+    display: grid; 
+    height: 95vh;
+    grid-template-columns: 200px 1fr 200px; /*Definindo largura de colunas*/
+    grid-template-rows: 100px 1fr 100px; /*Linhas*/
+    gap: 10px;
+    font-size: 20px;
+
+    grid-template-areas: "cabec cabec cabec" 
+                         "sidebar principal aside" /*SIDE BAR É O NAV NO HTML A TAG SEMÂNTICA*/
+                         "rodape rodape rodape"; /*E o desenho do site; (HEADER - CABEÇALHO), (SIDEBAR - BARRA DO LADO), (MAIN - PARTE PRINCIPAL), (ASIDE - LATERAL), (FOOTER - PARTE DE BAIXO)*/
+}
+
+header{
+
+    grid-area: cabec; /*NÃO E O NOME DA TAG (VOCÊ PODE POR O NOME QUE QUISER*/
+    background: #3ae672;
+    color: white;
+    padding: 1rem;
+}
+
+nav{ 
+
+    grid-area: sidebar; /*NÃO E O NOME DA TAG (VOCÊ PODE POR O NOME QUE QUISER*/
+    background: #12b2f2;
+    padding: 1rem;
+
+}
+
+main{
+
+    grid-area: principal; /*NÃO E O NOME DA TAG (VOCÊ PODE POR O NOME QUE QUISER*/
+    padding: 1rem;
+}
+
+aside{
+    
+    grid-area: aside; /*NÃO E O NOME DA TAG (VOCÊ PODE POR O NOME QUE QUISER*/
+    background: #5442f1;
+    color: white;
+    padding: 1rem;
+}
+
+footer{
+    
+    grid-area: rodape; /*NÃO E O NOME DA TAG (VOCÊ PODE POR O NOME QUE QUISER*/
+    background: #333;
+    color: white;
+    padding: 1rem; /*(REM) É DE ACORDO O TAMANHO DO TEXTO (PADDING PARA DESENCOSTAR DA LATERAL*/
+    text-align: center;
+}
