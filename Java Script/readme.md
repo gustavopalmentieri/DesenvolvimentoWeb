@@ -16,3 +16,4 @@
 
 - Importante organizar HTML, CSS e Java Script sempre em pastas para manter a organização dos arquivos e não perder coisas importantes para futuras manutenções.
 
+- Java Script não se chamava assim, como o Java estava em alta os criadores optaram por esse nome para alavancar a linguagem
